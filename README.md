@@ -17,6 +17,10 @@ In this project, the header and headline of the mobile view on my portfolio was 
 ![Image of the headline](./img/headline.png)
 
 
+# Live Website
+
+(https://dammyshittu.github.io/Portfolio-Project/)
+
 # This project was built with:
 
 HTML5
@@ -37,11 +41,11 @@ Figma
 
 # 👤 Author
 
-GitHub: @dammyShittu
+GitHub: (@dammyShittu)
 
-Twitter: @aded_shittu
+Twitter: (@aded_shittu)
 
-LinkedIn: linkedin.com/in/adedamola-shittu-3ab465172/
+LinkedIn: (linkedin.com/in/adedamola-shittu-3ab465172/)
 
 # 🤝 Contributing
 

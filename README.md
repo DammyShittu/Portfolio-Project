@@ -17,10 +17,6 @@ In this project, the header and headline of the mobile view on my portfolio was 
 ![Image of the headline](./img/headline.png)
 
 
-# Live Website
-
-(https://dammyshittu.github.io/Microverse-Trial/)
-
 # This project was built with:
 
 HTML5

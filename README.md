@@ -19,7 +19,7 @@ In this project, the header and headline of the mobile view on my portfolio was 
 
 # Live Website
 
-(https://dammyshittu.github.io/Portfolio-Project/)
+https://dammyshittu.github.io/Portfolio-Project/
 
 # This project was built with:
 
@@ -41,11 +41,12 @@ Figma
 
 # 👤 Author
 
-GitHub: (@dammyShittu)
+GitHub: [@dammyShittu](https://github.com/DammyShittu/)
 
-Twitter: (@aded_shittu)
 
-LinkedIn: (linkedin.com/in/adedamola-shittu-3ab465172/)
+Twitter: [@aded_shittu](https://twitter.com/aded_shittu/)
+
+LinkedIn: [Adedamola Shittu](linkedin.com/in/adedamola-shittu-3ab465172/)
 
 # 🤝 Contributing
 

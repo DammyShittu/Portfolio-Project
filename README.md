@@ -24,7 +24,9 @@ https://dammyshittu.github.io/Portfolio-Project/
 # This project was built with:
 
 HTML5
+
 CSS3
+
 Linters
 
 # Version Control System

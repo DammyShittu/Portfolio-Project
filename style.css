@@ -21,13 +21,15 @@ header {
   margin: 0 auto;
 }
 
-#page_logo span {
+#page_logo a {
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-align: center;
+  text-decoration: none;
+  color: #fff;
 }
 
 .container {
@@ -52,6 +54,7 @@ h1 {
 }
 
 .circle-1 {
+ background-image: url(./img/ellipse-1.svg);
   position: absolute;
   height: 100px;
   width: 100px;
@@ -62,6 +65,7 @@ h1 {
 }
 
 .circle-2 {
+ background-image: url(./img/ellipse-2.svg);
   position: absolute;
   width: 100px;
   height: 100px;
@@ -86,7 +90,7 @@ h1 {
   padding: 0 15px;
 }
 
-#portfolio-intro p {
+#portfolio-intro h3 {
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -98,16 +102,35 @@ h1 {
 .talent {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px 10px;
   border-top: 1px solid #646369;
   border-bottom: 1px solid #646369;
+  flex-wrap: nowrap;
 }
 
-.can-do {
-  font-size: 14px;
+.can-do ul {
+  margin: 0;
+  padding: 0;
+}
+
+.can-do .main-list {
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: 29px;
   text-align: left;
   color: #9390ff;
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.can-do .list {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  list-style: none;
+  color: #f5f5ff;
 }

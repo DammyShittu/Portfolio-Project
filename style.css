@@ -91,6 +91,15 @@ h1 {
   padding: 0 15px;
 }
 
+.work-card aside h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 80px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
 #portfolio-intro h3 {
   font-size: 32px;
   font-style: normal;
@@ -208,14 +217,50 @@ h1 {
   gap: 25px;
 }
 
+.ellipse {
+  position: absolute;
+  width: 37px;
+  height: 400px;
+  left: 0;
+  top: 30px;
+  background: #edecff url(./img/ellipse-3.svg);
+  filter: blur(30px);
+  transform: rotate(-36.38deg);
+  z-index: -2;
+}
+
+.ellipse-2,
+.ellipse-4 {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 90%;
+  top: 200px;
+  background: #edecff url(./img/ellipse-5.svg);
+  filter: blur(30px);
+  transform: rotate(-36.38deg);
+  z-index: -2;
+}
+
+.ellipse-3 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 100%;
+  top: 270px;
+  background: #edecff url(./img/ellipse-3.svg);
+  filter: blur(30px);
+  transform: rotate(-36.38deg);
+  z-index: -2;
+}
+
 .card {
   width: 55%;
   height: 350px;
-  background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: linear-gradient(0deg, #fff, #fff);
   flex: none;
   order: 0;
   flex-grow: 0;
- 
   border-radius: 10px;
 }
 
@@ -225,33 +270,23 @@ h1 {
   justify-content: flex-end;
 }
 
-.work-card aside h3 {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 80px;
-  display: flex;
-  align-items: center;
-  color: #FFFFFF;
-}
-
 .work-card aside p {
-  font-family: Inter sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
-  color: #DCDCE8;
+  color: #dcdce8;
   flex: none;
   order: 1;
-  flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px 0;
 }
 
 .stack-used {
   order: 2;
 }
 
-.stack-used ul{
+.stack-used ul {
   display: flex;
   gap: 20px;
   margin: 0;
@@ -263,12 +298,12 @@ h1 {
 .stack-used ul li {
   list-style: none;
   padding-right: 20px;
-  font-family: Inter sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .stack {
@@ -293,11 +328,11 @@ aside button:focus {
 
 aside button:hover {
   background: #7d73fc;
-  box-shadow: 0px 8px 16px 0px #7D73FC7A;
+  box-shadow: 0 8px 16px 0 #7d73fc7a;
   transition: all 300ms ease-in;
 }
 
-.card-2, 
+.card-2,
 .card-4 {
   order: 1;
 }
@@ -327,10 +362,10 @@ aside button:hover {
     width: 100%;
   }
 
-  .card-2, 
+  .card-2,
   .card-4 {
     order: 0;
-}
+  }
 
   .work-card aside {
     display: flex;
@@ -338,5 +373,11 @@ aside button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .ellipse-2,
+  .ellipse-4 {
+    width: 100px;
+    left: 80%;
   }
 }

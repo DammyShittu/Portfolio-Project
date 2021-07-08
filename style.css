@@ -32,6 +32,8 @@ header {
   color: #fff;
 }
 
+/* Headline */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -105,7 +107,7 @@ h1 {
   padding: 15px 10px;
   border-top: 1px solid #646369;
   border-bottom: 1px solid #646369;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .can-do ul {
@@ -133,4 +135,63 @@ h1 {
   text-align: left;
   list-style: none;
   color: #f5f5ff;
+}
+
+/* Social Media Icons */
+#media {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.work {
+  position: relative;
+  text-decoration: none;
+}
+
+.work-1 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: #b3bac5;
+}
+
+.first::after {
+  content: url(./img/arrow.png);
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 999;
+  height: 10px;
+}
+
+.second::before {
+  content: url(./img/arrow.png);
+  position: absolute;
+  top: 0;
+  right: 50px;
+  z-index: 999;
+  height: 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:768px) {
+ .can-do ul {
+   width: 250px;
+ }
+
+ #media {
+   flex-direction: column;
+   gap: 15px;
+   margin-top: 30px;
+ }
+
+ .first {
+   display: none;
+ }
 }

@@ -56,24 +56,22 @@ h1 {
 }
 
 .circle-1 {
- background-image: url(./img/ellipse-1.svg);
   position: absolute;
   height: 100px;
   width: 100px;
   right: 275px;
   top: 165px;
-  background: #edecff;
+  background: #edecff  url(./img/ellipse-1.svg);
   filter: blur(40px);
 }
 
 .circle-2 {
- background-image: url(./img/ellipse-2.svg);
   position: absolute;
   width: 100px;
   height: 100px;
   left: 280px;
   top: 600px;
-  background: #edecff;
+  background: #edecff url(./img/ellipse-2.svg);
   filter: blur(50px);
 }
 
@@ -131,7 +129,6 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  letter-spacing: 0em;
   text-align: left;
   list-style: none;
   color: #f5f5ff;
@@ -180,18 +177,18 @@ h1 {
 
 /* Media Queries */
 
-@media only screen and (max-width:768px) {
- .can-do ul {
-   width: 250px;
- }
+@media only screen and (max-width: 768px) {
+  .can-do ul {
+    width: 250px;
+  }
 
- #media {
-   flex-direction: column;
-   gap: 15px;
-   margin-top: 30px;
- }
+  #media {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
 
- .first {
-   display: none;
- }
+  .first {
+    display: none;
+  }
 }

@@ -144,7 +144,7 @@ h1 {
 }
 
 .sub-list {
- margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* Social Media Icons */
@@ -199,7 +199,7 @@ h1 {
 #works h2 {
   font-size: 40px;
   font-weight: 700;
-  line-height: 84px;
+  line-height: 96px;
   text-align: left;
   display: flex;
   align-items: center;
@@ -211,7 +211,7 @@ h1 {
   display: grid;
   grid-gap: 80px;
   width: 100%;
-  margin: 50px 0;
+  margin: 70px 0;
 }
 
 .work-card {
@@ -327,12 +327,13 @@ aside button {
 }
 
 aside button:focus {
-  background: #8a898d;
+  background: #5e42d7;
 }
 
 aside button:hover {
   background: #7d73fc;
   box-shadow: 0 8px 16px 0 #7d73fc7a;
+  transform: scale(0.97);
   transition: all 300ms ease-in;
 }
 

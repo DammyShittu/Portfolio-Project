@@ -346,7 +346,12 @@ aside button:hover {
 
 @media only screen and (max-width: 768px) {
   .can-do ul {
-    width: 210px;
+    width: 150px;
+  }
+
+  .talent {
+    width: 85%;
+    margin: 0 auto;
   }
 
   #media {

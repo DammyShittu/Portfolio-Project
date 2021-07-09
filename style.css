@@ -15,10 +15,11 @@ body {
 }
 
 header {
-  height: 72px;
+  height: 100px;
+  width: 85%;
   display: flex;
   justify-content: space-between;
-  padding: 40px 20px;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -110,12 +111,8 @@ h1 {
 }
 
 .talent {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 10px;
   border-top: 1px solid #646369;
   border-bottom: 1px solid #646369;
-  flex-wrap: wrap;
 }
 
 .talent .main-list {
@@ -129,9 +126,12 @@ h1 {
   text-align: left;
 }
 
-.can-do ul {
+.can-do {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .can-do .list {
@@ -141,6 +141,10 @@ h1 {
   text-align: left;
   list-style: none;
   color: #f5f5ff;
+}
+
+.sub-list {
+ margin-top: 20px;
 }
 
 /* Social Media Icons */

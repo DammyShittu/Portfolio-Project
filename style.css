@@ -23,6 +23,29 @@ header {
   margin: 0 auto;
 }
 
+button {
+  background: #7d73fc;
+  padding: 10px 15px;
+  min-width: 80px;
+  max-width: 150px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  order: 3;
+}
+
+button:focus {
+  background: #5e42d7;
+}
+
+button:hover {
+  background: #7d73fc;
+  box-shadow: 0 8px 16px 0 #7d73fc7a;
+  transform: scale(0.97);
+  transition: all 300ms ease-in;
+}
+
 #page_logo a {
   font-size: 25px;
   font-style: normal;
@@ -280,6 +303,14 @@ h1 {
   justify-content: flex-end;
 }
 
+.contact-head p {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
 .work-card aside p {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -320,32 +351,51 @@ h1 {
   border-right: 1px solid #646369;
 }
 
-aside button {
-  background: #7d73fc;
-  padding: 10px 20px;
-  width: 120px;
-  max-width: 150px;
-  outline: none;
-  cursor: pointer;
-  color: #fff;
-  font-size: 14px;
-  order: 3;
-}
-
-aside button:focus {
-  background: #5e42d7;
-}
-
-aside button:hover {
-  background: #7d73fc;
-  box-shadow: 0 8px 16px 0 #7d73fc7a;
-  transform: scale(0.97);
-  transition: all 300ms ease-in;
-}
-
 .card-2,
 .card-4 {
   order: 1;
+}
+
+#contact {
+  width: 90%;
+  margin: 25% auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.contact-head h4 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  padding-bottom: 20px;
+  color: #9390ff;
+}
+
+form {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 20px 15px;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  caret-color: #191765;
+  font-size: 18px;
+}
+
+textarea {
+  height: 250px;
 }
 
 /* Media Queries */

@@ -212,11 +212,13 @@
 
       <form action="https://formspree.io/f/mbjqagag" method="POST">
         <div class="form-1">
-          <input type="text" name="user_name" id="name" placeholder="Your Name" min="1" max="30" required>
+          <input type="text" name="user_name" id="name" placeholder="Your Name" minlength="1" maxlength="30" required>
           <input type="email" name="user_email" placeholder="johndoe@email.com" required>
         </div>
-        <textarea name="user_message" id="message" minlength="1" maxlength="500"></textarea>
-        <button type="submit"></button>
+        <textarea name="user_message" id="message" minlength="1" maxlength="500" placeholder="Enter text here" required></textarea>
+        <div class="btn-1">
+          <button type="submit">Send A Message</button>
+        </div>
       </form>
     </section>
   </main>

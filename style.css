@@ -394,8 +394,7 @@ aside button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    width: 90%;
   }
 
   .ellipse-2,

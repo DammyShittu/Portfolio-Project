@@ -397,7 +397,6 @@ form {
 
 input,
 textarea {
-  width: 100%;
   padding: 20px 15px;
   outline: none;
   border: 0;
@@ -405,6 +404,20 @@ textarea {
   margin-bottom: 30px;
   caret-color: #191765;
   font-size: 18px;
+}
+
+.form-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type=text] {
+  width: 48%;
+}
+
+input[type=email],
+textarea {
+  width: 100%;
 }
 
 textarea {
@@ -484,5 +497,15 @@ footer {
   .ellipse-4 {
     width: 100px;
     left: 0;
+  }
+
+  .form-1 {
+    flex-direction: column;
+  }
+
+  input[type=text] {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
   }
 }

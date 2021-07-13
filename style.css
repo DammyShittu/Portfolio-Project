@@ -409,6 +409,7 @@ textarea {
 
 textarea {
   height: 250px;
+  font-family: Inter, sans-serif;
 }
 
 input:focus,

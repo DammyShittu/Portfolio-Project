@@ -71,14 +71,15 @@ h1 {
   position: absolute;
   width: 100px;
   height: 100px;
-  left: 280px;
+  left: 20px;
   top: 600px;
   background: #edecff url(./img/ellipse-2.svg);
   filter: blur(50px);
 }
 
 .about {
-  max-width: 450px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .about h2 {
@@ -89,7 +90,8 @@ h1 {
   text-align: center;
   margin-bottom: 45px;
   color: #b3bac5;
-  padding: 0 15px;
+  padding: 0;
+  overflow: hidden;
 }
 
 .work-card aside h3 {
@@ -212,11 +214,14 @@ h1 {
   grid-gap: 80px;
   width: 100%;
   margin: 70px 0;
+  padding: 0;
 }
 
 .work-card {
   display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   gap: 25px;
   list-style: none;
@@ -345,7 +350,7 @@ aside button:hover {
 
 /* Media Queries */
 
-@media only screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .can-do ul {
     width: 150px;
   }
@@ -365,12 +370,19 @@ aside button:hover {
     display: none;
   }
 
+  #works {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .work-card {
     flex-direction: column;
+    justify-content: center;
   }
 
   .card {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .card-2,
@@ -389,6 +401,6 @@ aside button:hover {
   .ellipse-2,
   .ellipse-4 {
     width: 100px;
-    left: 80%;
+    left: 0;
   }
 }

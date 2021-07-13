@@ -128,7 +128,7 @@
               </ul>
             </div>
 
-            <button>See Project</button>
+            <button type="submit">See Project</button>
           </aside>
         </li>
 
@@ -150,7 +150,7 @@
               </ul>
             </div>
 
-            <button>See Project</button>
+            <button type="submit">See Project</button>
           </aside>
         </li>
 
@@ -172,7 +172,7 @@
               </ul>
             </div>
 
-            <button>See Project</button>
+            <button type="submit">See Project</button>
           </aside>
         </li>
 
@@ -194,11 +194,30 @@
               </ul>
             </div>
 
-            <button>See Project</button>
+            <button type="submit">See Project</button>
           </aside>
         </li>
       </ul>
 
+    </section>
+
+    <!-- Contact Us -->
+
+    <section id="contact">
+      <div class="contact-head">
+        <h4>CONTACT US</h4>
+        <p>If you have an application you are interested in developing, a feature that you need built or a project that
+          needs coding. I’d love to help with it </p>
+      </div>
+
+      <form action="https://formspree.io/f/mbjqagag" method="POST">
+        <div class="form-1">
+          <input type="text" name="user_name" id="name" placeholder="Your Name" min="1" max="30" required>
+          <input type="email" name="user_email" placeholder="johndoe@email.com" required>
+        </div>
+        <textarea name="user_message" id="message" minlength="1" maxlength="500"></textarea>
+        <button type="submit"></button>
+      </form>
     </section>
   </main>
 </body>

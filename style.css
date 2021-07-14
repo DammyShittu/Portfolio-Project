@@ -111,12 +111,12 @@ h1 {
   filter: blur(50px);
 }
 
-.about {
+#about {
   width: 90%;
   margin: 0 auto;
 }
 
-.about h2 {
+#about h2 {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

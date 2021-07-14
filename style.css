@@ -152,10 +152,15 @@ h1 {
   color: #dfe1e6;
 }
 
+#pro-skills {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .talent {
   border-top: 1px solid #646369;
   border-bottom: 1px solid #646369;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -167,7 +172,7 @@ h1 {
   list-style: none;
   margin: 20px 0;
   padding: 0;
-  width: 43%;
+  width: 42%;
   text-align: left;
 }
 
@@ -515,8 +520,9 @@ footer {
     margin-top: 40px;
   }
 
-  .talent {
-    width: 45%;
+  #pro-skills {
+    width: 40%;
+    margin: 0 auto;
   }
 
   .talent .main-list {
@@ -528,7 +534,7 @@ footer {
   }
 
   #works {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 12%;
   }
@@ -559,7 +565,7 @@ footer {
   .ellipse-2,
   .ellipse-4 {
     width: 200px;
-    left: 90%;
+    left: 80%;
   }
 
   #contact {
@@ -586,5 +592,12 @@ footer {
   footer {
     flex-direction: row;
     gap: 25px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .ellipse-2,
+  .ellipse-4 {
+    left: 90%;
   }
 }

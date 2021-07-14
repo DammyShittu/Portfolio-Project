@@ -155,7 +155,7 @@ h1 {
 .talent {
   border-top: 1px solid #646369;
   border-bottom: 1px solid #646369;
-  width: 450px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -167,7 +167,7 @@ h1 {
   list-style: none;
   margin: 20px 0;
   padding: 0;
-  width: 40%;
+  width: 43%;
   text-align: left;
 }
 
@@ -513,6 +513,10 @@ footer {
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
+  }
+
+  .talent {
+    width: 45%;
   }
 
   .talent .main-list {

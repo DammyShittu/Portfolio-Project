@@ -25,7 +25,7 @@ header {
 
 button {
   background: #7d73fc;
-  padding: 10px 15px;
+  padding: 10px;
   min-width: 80px;
   max-width: 150px;
   outline: none;
@@ -33,6 +33,8 @@ button {
   color: #fff;
   font-size: 14px;
   order: 3;
+  border: 0;
+  border-radius: 5px;
 }
 
 button:focus {
@@ -222,7 +224,7 @@ h1 {
 .first::after {
   content: url(./img/arrow.png);
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 50px;
   z-index: 999;
   height: 10px;
@@ -231,7 +233,7 @@ h1 {
 .second::before {
   content: url(./img/arrow.png);
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 50px;
   z-index: 999;
   height: 10px;
@@ -240,7 +242,7 @@ h1 {
 /* Works Section */
 
 #works {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 15%;
 }
@@ -313,7 +315,7 @@ h1 {
 }
 
 .card {
-  width: 90%;
+  width: 100%;
   height: 350px;
   background: linear-gradient(0deg, #fff, #fff);
   flex: none;
@@ -323,12 +325,10 @@ h1 {
 }
 
 .work-card aside {
-  width: 90%;
+  width: 100%;
 }
 
 .work-card .aside-1 {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-end;
 }
 
@@ -399,6 +399,10 @@ h1 {
   gap: 40px;
 }
 
+.chat {
+  display: none;
+}
+
 .contact-head h4 {
   font-size: 36px;
   font-style: normal;
@@ -420,22 +424,15 @@ textarea {
   border: 0;
   border-radius: 5px;
   margin-bottom: 30px;
-  caret-color: #191765;
+  caret-color: #b4b3c4;
   font-size: 18px;
+  width: 100%;
 }
 
 .form-1 {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-}
-
-input[type=text] {
-  width: 48%;
-}
-
-input[type=email],
-textarea {
-  width: 100%;
 }
 
 textarea {
@@ -532,6 +529,11 @@ footer {
     margin-top: 12%;
   }
 
+  #works h2,
+  .contact-head h4 {
+    font-size: 55px;
+  }
+
   .work-card {
     flex-direction: row;
   }
@@ -555,16 +557,30 @@ footer {
     width: 200px;
     left: 90%;
   }
-}
 
-@media all and (max-width: 768px) {
-  .form-1 {
-    flex-direction: column;
+  #contact {
+    margin: 12% auto;
   }
 
-  input[type=text] {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 30px;
+  .chat {
+    display: block;
+  }
+
+  .contact-us {
+    display: none;
+  }
+
+  .contact-head p {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  footer {
+    flex-direction: row;
+    gap: 25px;
   }
 }

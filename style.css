@@ -57,6 +57,10 @@ footer a:hover {
   transition: color 200ms ease-in-out;
 }
 
+nav ul {
+  display: none;
+}
+
 #page_logo a {
   font-size: 25px;
   font-style: normal;
@@ -445,6 +449,43 @@ footer {
 }
 
 /* Media Queries */
+
+@media all and (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    list-style: none;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  nav ul li a:hover {
+    color: #b3bac5;
+    border-bottom: 1px solid #959597;
+  }
+
+  nav ul li a img {
+    position: relative;
+    top: 2px;
+  }
+}
 
 @media all and (max-width: 768px) {
   .can-do ul {

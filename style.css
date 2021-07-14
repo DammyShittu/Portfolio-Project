@@ -153,6 +153,8 @@ h1 {
 .talent {
   border-top: 1px solid #646369;
   border-bottom: 1px solid #646369;
+  width: 450px;
+  margin: 0 auto;
 }
 
 .talent .main-list {
@@ -163,6 +165,7 @@ h1 {
   list-style: none;
   margin: 20px 0;
   padding: 0;
+  width: 40%;
   text-align: left;
 }
 
@@ -190,10 +193,12 @@ h1 {
 /* Social Media Icons */
 #media {
   display: flex;
-  width: 65%;
+  flex-direction: column;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 50px auto;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .work {
@@ -208,6 +213,10 @@ h1 {
   line-height: 32px;
   text-align: center;
   color: #b3bac5;
+}
+
+.first {
+  display: none;
 }
 
 .first::after {
@@ -231,7 +240,7 @@ h1 {
 /* Works Section */
 
 #works {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 15%;
 }
@@ -257,6 +266,7 @@ h1 {
 
 .work-card {
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -280,9 +290,9 @@ h1 {
 .ellipse-2,
 .ellipse-4 {
   position: absolute;
-  width: 200px;
+  width: 100px;
   height: 100px;
-  left: 90%;
+  left: 0;
   top: 200px;
   background: #edecff url(./img/ellipse-5.svg);
   filter: blur(30px);
@@ -303,13 +313,17 @@ h1 {
 }
 
 .card {
-  width: 55%;
+  width: 90%;
   height: 350px;
   background: linear-gradient(0deg, #fff, #fff);
   flex: none;
   order: 0;
   flex-grow: 0;
   border-radius: 10px;
+}
+
+.work-card aside {
+  width: 90%;
 }
 
 .work-card .aside-1 {
@@ -368,7 +382,7 @@ h1 {
 
 .card-2,
 .card-4 {
-  order: 1;
+  order: 0;
 }
 
 /* Contact Us Section */
@@ -485,61 +499,65 @@ footer {
     position: relative;
     top: 2px;
   }
-}
 
-@media all and (max-width: 768px) {
-  .can-do ul {
-    width: 150px;
+  h1 {
+    font-size: 60px;
+    line-height: 100px;
   }
 
-  .talent {
-    width: 85%;
+  #about h2 {
+    width: 40%;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   #media {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 30px;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .talent .main-list {
+    width: auto;
   }
 
   .first {
-    display: none;
+    display: block;
   }
 
   #works {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+    margin-top: 12%;
   }
 
   .work-card {
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
   }
 
   .card {
-    width: 90%;
-    margin: 0 auto;
+    width: 55%;
   }
 
   .card-2,
   .card-4 {
-    order: 0;
+    order: 1;
   }
 
   .work-card aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
+    width: 100%;
+    overflow: hidden;
   }
 
   .ellipse-2,
   .ellipse-4 {
-    width: 100px;
-    left: 0;
+    width: 200px;
+    left: 90%;
   }
+}
 
+@media all and (max-width: 768px) {
   .form-1 {
     flex-direction: column;
   }

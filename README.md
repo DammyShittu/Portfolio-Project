@@ -8,13 +8,17 @@ In this project, the header and headline of the mobile view on my portfolio was 
 
 # Screenshot
 
-## Header Image
+## Desktop View 
 
-![Image of the header](./img/header.png)
+Width - 1440px
 
-## Headline Image
+![Image of the desktop view](./img/desktop-view.png)
 
-![Image of the headline](./img/headline.png)
+## Mobile View
+
+Width - 375px
+
+![Image of the mobile view](./img/mobile-view.png)
 
 
 # Live Website

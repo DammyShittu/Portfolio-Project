@@ -42,10 +42,10 @@ button:focus {
 }
 
 button:hover {
-  background: #7d73fc;
+  background-color: #7d73fc;
   box-shadow: 0 8px 16px 0 #7d73fc7a;
-  transform: scale(0.97);
-  transition: all 300ms ease-in;
+  transform: scale(0.98);
+  transition: background-color 300ms ease-in;
 }
 
 footer a {
@@ -61,6 +61,10 @@ footer a:hover {
 
 nav ul {
   display: none;
+}
+
+#page_logo {
+  animation: rotate 3s;
 }
 
 #page_logo a {
@@ -327,6 +331,15 @@ h1 {
   order: 0;
   flex-grow: 0;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(0.98);
+  box-shadow: 10px 10px 5px rgba(21, 22, 73, 0.75);
+  -webkit-box-shadow: 10px 10px 5px rgba(21, 22, 73, 0.75);
+  -moz-box-shadow: 10px 10px 5px rgba(21, 22, 73, 0.75);
+  transition: all 200ms ease-in-out;
 }
 
 .work-card aside {
@@ -443,6 +456,11 @@ textarea {
 textarea {
   height: 250px;
   font-family: Inter, sans-serif;
+}
+
+input:hover,
+textarea:hover {
+  transform: translateX(10px);
 }
 
 input:focus,
@@ -599,5 +617,15 @@ footer {
   .ellipse-2,
   .ellipse-4 {
     left: 90%;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }

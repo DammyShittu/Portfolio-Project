@@ -42,10 +42,10 @@ button:focus {
 }
 
 button:hover {
-  background: #7d73fc;
+  background-color: #7d73fc;
   box-shadow: 0 8px 16px 0 #7d73fc7a;
-  transform: scale(0.97);
-  transition: all 300ms ease-in;
+  transform: scale(0.98);
+  transition: background-color 300ms ease-in;
 }
 
 footer a {
@@ -327,6 +327,10 @@ h1 {
   order: 0;
   flex-grow: 0;
   border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(0.98);
 }
 
 .work-card aside {

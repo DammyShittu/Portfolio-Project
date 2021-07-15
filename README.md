@@ -1,6 +1,6 @@
 # Portfolio Project
 
-In this project, the header and headline of the mobile view on my portfolio was worked on
+This project contains my portfolio, coded according to requirements provided by Microverse Inc.
 
 # Project Name
 
@@ -43,7 +43,7 @@ Github
 
 # Template Source
 
-Figma
+[Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10)
 
 # 👤 Author
 

@@ -23,7 +23,7 @@ Width - 375px
 
 # Live Website
 
-https://dammyshittu.github.io/Portfolio-Project/
+Click [here](https://dammyshittu.github.io/Portfolio-Project/) to view the website online.
 
 # This project was built with:
 
@@ -32,6 +32,8 @@ HTML5
 CSS3
 
 Linters
+
+Website was deployed with Github Pages
 
 # Version Control System
 

@@ -24,7 +24,7 @@ header {
 }
 
 button {
-  background: #7d73fc;
+  background: #483ed3;
   padding: 10px;
   min-width: 80px;
   max-width: 150px;
@@ -35,6 +35,7 @@ button {
   order: 3;
   border: 0;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 button:focus {
@@ -147,7 +148,7 @@ h1 {
   color: #fff;
 }
 
-#portfolio-intro h3 {
+#portfolio-intro h2 {
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -468,6 +469,7 @@ textarea:focus {
   box-shadow: 7px 7px 5px 0 rgba(15, 43, 133, 0.75);
   -webkit-box-shadow: 7px 7px 5px 0 rgba(15, 43, 133, 0.75);
   -moz-box-shadow: 7px 7px 5px 0 rgba(15, 43, 133, 0.75);
+  border: 3px solid #7d73fc;
 }
 
 /* Footer Section */

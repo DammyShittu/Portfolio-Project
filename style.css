@@ -24,7 +24,7 @@ header {
 }
 
 button {
-  background: #7d73fc;
+  background: #483ed3;
   padding: 10px;
   min-width: 80px;
   max-width: 150px;
@@ -469,6 +469,7 @@ textarea:focus {
   box-shadow: 7px 7px 5px 0 rgba(15, 43, 133, 0.75);
   -webkit-box-shadow: 7px 7px 5px 0 rgba(15, 43, 133, 0.75);
   -moz-box-shadow: 7px 7px 5px 0 rgba(15, 43, 133, 0.75);
+  border: 3px solid #7d73fc;
 }
 
 /* Footer Section */

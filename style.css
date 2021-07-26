@@ -109,6 +109,15 @@ footer a:hover {
   border-bottom: 1px solid #a5a5aa;
   color: #b3bac5;
 }
+
+.close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  z-index: 3;
+  cursor: pointer;
+}
+
 /* Navbar */
 nav ul {
   display: none;

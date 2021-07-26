@@ -118,6 +118,34 @@ footer a:hover {
   cursor: pointer;
 }
 
+.hamburger {
+  cursor: pointer;
+}
+
+.mobile-1 {
+  position: absolute;
+  width: 100px;
+  height: 250px;
+  left: 0;
+  top: 150px;
+  background: rgba(237, 236, 255, 0.6);
+  filter: blur(50px);
+  transform: rotate(25.09deg);
+  cursor: pointer;
+}
+
+.mobile-2 {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  left: 64%;
+  top: 400px;
+  background: rgba(237, 236, 255, 0.9);
+  filter: blur(50px);
+  transform: rotate(150deg);
+  overflow: hidden;
+}
+
 /* Navbar */
 nav ul {
   display: none;
@@ -672,6 +700,11 @@ footer {
     flex-direction: row;
     gap: 25px;
   }
+
+  .mobile-menu {
+    visibility: hidden;
+  }
+
 }
 
 @media all and (min-width: 1200px) {

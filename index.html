@@ -9,14 +9,26 @@
   </head>
 
   <body>
-    <!-- Header Section -->
-
+  
+ <!-- Mobile Menu -->
+ <div id="menu" class="mobile-menu">
+  <ul >
+    <li class="classList"><a href="#about">About</a></li>
+    <li class="classList"><a href="#works">Portfolio</a></li>
+    <li class="classList"><a href="#contact">Contact</a></li>
+  </ul>
+  <img src="./img/Icon.png" alt="Close Menu" class="close" id="close-menu">
+  <div class="mobile-1"></div>
+  <div class="mobile-2"></div>
+</div>
+<!-- End Of Mobile Menu -->
+  <!-- Header Section -->
     <header>
       <div id="page_logo">
         <a href="#">Dammy Shittu</a>
       </div>
 
-      <nav>
+      <nav id="page-nav">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#works">Portfolio</a></li>
@@ -28,7 +40,7 @@
             /></a>
           </li>
         </ul>
-        <img src="./img/union.png" alt="Menu Hamburger" class="hamburger" />
+        <img src="./img/union.png" alt="Menu Hamburger" class="hamburger" id="hamburger-icon"/>
       </nav>
     </header>
 
@@ -285,5 +297,7 @@
         >
       </footer>
     </main>
+
+    <script src="main.js"></script>
   </body>
 </html>

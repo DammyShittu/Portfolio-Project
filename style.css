@@ -78,6 +78,38 @@ footer a:hover {
   margin-top: 100px;
 }
 
+.mobile-menu ul li {
+  position: relative;
+  list-style: none; 
+  margin: 35px auto;
+}
+
+  .mobile-menu ul li a {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  color: #ebebff;
+  text-decoration: none;
+  padding: 5px;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.mobile-menu ul li a::after {
+  content: url(./img/side-arrow.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.mobile-menu ul li a:hover {
+  border-bottom: 1px solid #a5a5aa;
+  color: #b3bac5;
+}
+/* Navbar */
 nav ul {
   display: none;
 }

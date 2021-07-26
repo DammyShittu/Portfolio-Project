@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-
 const mobileMenu = document.getElementById('menu');
 const closeIcon = document.getElementById('close-menu');
 const openIcon = document.getElementById('hamburger-icon');

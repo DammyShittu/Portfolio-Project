@@ -599,7 +599,7 @@ footer {
 }
 
 .modal-img img{
-  width: 354px;
+  width: 100%;
   margin-bottom: 20px;
 }
 

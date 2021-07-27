@@ -12,7 +12,7 @@ const workProjects = [
     It has survived not only five centuries, but also the leap into electronic typesetting, 
     remaining essent`,
     image: {
-      imageUrl: '../img/mobile-snapshot.png',
+      imageUrl: './img/mobile-snapshot.png',
       imageAlt: 'Mobile Snapshot',
     },
     technologies: ['Html', 'Ruby on rails', 'Css', 'Github'],
@@ -32,7 +32,7 @@ const workProjects = [
     It has survived not only five centuries, but also the leap into electronic typesetting, 
     remaining essent`,
     image: {
-      imageUrl: '../img/mobile-snapshot.png',
+      imageUrl: './img/mobile-snapshot.png',
       imageAlt: 'Mobile Snapshot',
     },
     technologies: ['Html', 'Ruby on rails', 'Css', 'Github'],
@@ -52,7 +52,7 @@ const workProjects = [
     It has survived not only five centuries, but also the leap into electronic typesetting, 
     remaining essent`,
     image: {
-      imageUrl: '../img/mobile-snapshot.png',
+      imageUrl: './img/mobile-snapshot.png',
       imageAlt: 'Mobile Snapshot',
     },
     technologies: ['Html', 'Ruby on rails', 'Css', 'Github'],
@@ -68,7 +68,7 @@ const workProjects = [
     It has survived not only five centuries, but also the leap into electronic typesetting, 
     remaining essent.`,
     image: {
-      imageUrl: '../img/mobile-snapshot.png',
+      imageUrl: './img/mobile-snapshot.png',
       imageAlt: 'Mobile Snapshot',
     },
     technologies: ['Html', 'Ruby on rails', 'Css', 'Github'],

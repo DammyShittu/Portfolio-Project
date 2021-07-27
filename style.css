@@ -85,6 +85,11 @@ footer a:hover {
   z-index: 999;
 }
 
+.modal-btn button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .mobile-menu ul li a {
   font-size: 24px;
   font-style: normal;
@@ -357,7 +362,7 @@ h1 {
   display: grid;
   grid-gap: 80px;
   width: 100%;
-  margin: 70px 0;
+  margin: 50px 0;
   padding: 0;
 }
 
@@ -574,13 +579,22 @@ footer {
 }
 
 /* Modal */
-#modal {
+.modal {
   width: 90%;
   height: auto;
   margin: 0 auto;
   background: rgba(184, 184, 184, 0.16);
-  border: 1px solid #FFFFFF;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border: 1px solid #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  position: fixed;
+  top: 25px;
+  bottom: 15px;
+  right: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+  z-index: 999;
 }
 
 .modal-menu {
@@ -591,14 +605,15 @@ footer {
 .modal-close {
   margin-left: 90%;
   padding: 20px;
+  cursor: pointer;
 }
 
-.modal-menu h2 {
-  line-height: 84px;
+.modal-menu h4 {
+  font-size: 38px;
   margin-left: 10px;
 }
 
-.modal-img img{
+.modal-img img {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -610,12 +625,17 @@ footer {
 }
 
 .stack-used-1,
-.modal-btn{
+.modal-btn {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.modal-btn button {
+  margin: 0 20px 30px 20px;
+  padding: 10px;
 }
 
 /* Media Queries */
@@ -750,6 +770,15 @@ footer {
 
   .mobile-menu {
     visibility: hidden;
+  }
+
+  .modal {
+    width: 85%;
+  }
+
+  .modal-menu p {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 

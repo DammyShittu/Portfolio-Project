@@ -1,6 +1,7 @@
-const workProjects = {
-  firstProject: {
+const workProjects = [
+  {
     title: 'Multi-Post Stories',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
     unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -18,8 +19,9 @@ const workProjects = {
     seeLive: 'index.html',
     sourceUrl: 'https://github.com/DammyShittu/Portfolio-Project',
   },
-  secondProject: {
+  {
     title: 'Multi-Post Stories',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
     unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -37,8 +39,9 @@ const workProjects = {
     seeLive: 'index.html',
     sourceUrl: 'https://github.com/DammyShittu/Portfolio-Project',
   },
-  thirdProject: {
+  {
     title: 'Multi-Post Stories',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
     unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -56,17 +59,14 @@ const workProjects = {
     seeLive: 'index.html',
     sourceUrl: 'https://github.com/DammyShittu/Portfolio-Project',
   },
-  fourthProject: {
+  {
     title: 'Multi-Post Stories',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
     unknown printer took a galley of type and scrambled it to make a type specimen book. 
     It has survived not only five centuries, but also the leap into electronic typesetting, 
-    remaining essent, Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-    unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    It has survived not only five centuries, but also the leap into electronic typesetting, 
-    remaining essent`,
+    remaining essent.`,
     image: {
       imageUrl: '../img/mobile-snapshot.png',
       imageAlt: 'Mobile Snapshot',
@@ -75,32 +75,33 @@ const workProjects = {
     seeLive: 'index.html',
     sourceUrl: 'https://github.com/DammyShittu/Portfolio-Project',
   },
-};
+];
 
-function createCard(project, ind) {
-  let htmlTxt = `<li class="work-card project-1">
+function createCard(project) {
+  let worksText = `<li class="work-card project-1">
                   <div class="square ellipse"></div>
                   <div class="card"></div>
                   <aside class="aside-1">
                     <h3>${project.title}</h3>
-                    <p>${project.description}</p>
+                    <p>${project.shortDescription}</p>
                     <div class="stack-used">
                       <ul>`;
-                      for (let i = 0; i < project.technologies.length; i += 1) {
-                        htmlTxt += `<li class="stack>${project.technologies[i]}</li>`;
-                      }
-          htmlTxt += `</ul>
+  for (let i = 0; i < project.technologies.length; i += 1) {
+    worksText += `<li class="stack">${project.technologies[i]}</li>`;
+  }
+  worksText += `</ul>
                     </div>
-                    <button type="submit">See Project</button>
+                    <button type="submit" class="project-btn">See Project</button>
                   </aside>
-                </li>`
+                </li>`;
+  return worksText;
 }
 
-function createModal(project, ind) {
-  let htmlTxt = `<section id="modal">
-                  <div class="modal-menu">
+function createModal(project) {
+  let worksText = `<section class="modal">
+  <div class="modal-menu">
                   <img src="./img/Icon.png" alt="Close" class="modal-close">
-                  <h2>${project.title}</h2>
+                  <h4>${project.title}</h4>
                   <div class="modal-img">
                     <img src="${project.image.imageUrl}" alt="${project.image.imageAlt}">
                   </div>
@@ -108,18 +109,59 @@ function createModal(project, ind) {
                     <p>${project.description}</p>
                   </div>
                   <div class="stack-used stack-used-1">
-                    <ul>
-                      <li class="stack">Html</li>
-                      <li class="stack">Ruby on Rails</li>
-                      <li class="stack">Css</li>
-                    </ul>
+                  <ul>`;
+  for (let i = 0; i < project.technologies.length; i += 1) {
+    worksText += `<li class="stack>${project.technologies[i]}</li>`;
+  }
+  worksText += `</ul>
                   </div>
                   <div class="modal-btn">
-                  <button type="submit" class="modalBtn-1">See Live
-                    <img src="./img/file.png" alt="">
+                  <button type="submit" class="modalBtn"><a href="${project.seeLive}">See Live
+                    <img src="./img/file.png" alt="See Live Icon" class="button-img"></a>
                   </button>
-                  <button type="submit" class="modalBtn-2">See Source
-                  <img src="./img/git.png" alt="">
+                  <button type="submit" class="modalBtn"><a href="${project.sourceUrl}" target="_blank">See Source
+                  <img src="./img/git.png" alt="See Source Icon" class="button-img"></a>
                   </button>
                 </section>`;
+
+  return worksText;
 }
+
+const worksList = document.querySelector('#works ul');
+const works = document.querySelector('#modal-div');
+function insertHtml() {
+  const myWorks = Object.keys(workProjects);
+  const myWorksLength = Object.keys(workProjects).length;
+
+  for (let i = 0; i < myWorksLength; i += 1) {
+    worksList.innerHTML += createCard(workProjects[myWorks[i]], i);
+  }
+
+  for (let j = 0; j < myWorksLength; j += 1) {
+    works.innerHTML += createModal(workProjects[myWorks[j]], j);
+  }
+}
+
+worksList.onload = insertHtml();
+
+const mainPage = document.querySelector('#main-page');
+const header = document.getElementById('page-header');
+
+document.querySelectorAll('.project-btn').forEach((open) => {
+  open.addEventListener('click', () => {
+    document.querySelector('.modal').style.display = 'block';
+    mainPage.style.display = 'none';
+    header.style.display = 'none';
+  });
+});
+
+document.querySelectorAll('.modal-close').forEach((close) => {
+  close.addEventListener('click', () => {
+    document.querySelectorAll('.modal').forEach((item) => {
+      item.style.display = 'none';
+    });
+
+    mainPage.style.display = 'block';
+    header.style.display = 'flex';
+  });
+});

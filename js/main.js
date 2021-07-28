@@ -27,8 +27,8 @@ const textarea = document.getElementById('message');
 form.addEventListener('submit', (e) => {
   if (email.value.toLowerCase() !== email.value) {
     e.preventDefault();
-    error.style.display = 'block'
+    error.style.display = 'block';
     error.textContent = 'Kindly Use Only Lowercase Letters In Your Email';
-    message.style.marginBottom = '10px';
+    textarea.style.marginBottom = '10px';
   }
 });

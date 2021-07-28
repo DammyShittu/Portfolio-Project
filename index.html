@@ -23,7 +23,7 @@
 </div>
 <!-- End Of Mobile Menu -->
   <!-- Header Section -->
-    <header>
+    <header id="page-header">
       <div id="page_logo">
         <a href="#">Dammy Shittu</a>
       </div>
@@ -47,7 +47,7 @@
     <!-- End of Header Section -->
 
     <!-- Main Section -->
-    <main>
+    <main id="main-page">
       <section class="container">
         <div class="circle-1"></div>
 
@@ -130,107 +130,7 @@
 
       <section id="works">
         <h2>My recent work</h2>
-
-        <ul class="all-cards">
-          <li class="work-card project-1">
-            <div class="square ellipse"></div>
-            <div class="card"></div>
-            <aside class="aside-1">
-              <h3>Multi-Post Stories</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-
-              <div class="stack-used">
-                <ul>
-                  <li class="stack">Css</li>
-                  <li class="stack">Html</li>
-                  <li class="stack">Bootstrap</li>
-                  <li>Ruby</li>
-                </ul>
-              </div>
-
-              <button type="submit">See Project</button>
-            </aside>
-          </li>
-
-          <li class="work-card project-2">
-            <div class="square ellipse-2"></div>
-            <div class="card card-2"></div>
-            <aside>
-              <h3>Multi-Post Stories</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-
-              <div class="stack-used">
-                <ul>
-                  <li class="stack">Css</li>
-                  <li class="stack">Html</li>
-                  <li class="stack">Bootstrap</li>
-                  <li>Ruby</li>
-                </ul>
-              </div>
-
-              <button type="submit">See Project</button>
-            </aside>
-          </li>
-
-          <li class="work-card project-3">
-            <div class="square ellipse-3"></div>
-            <div class="card"></div>
-            <aside>
-              <h3>Multi-Post Stories</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-
-              <div class="stack-used">
-                <ul>
-                  <li class="stack">Css</li>
-                  <li class="stack">Html</li>
-                  <li class="stack">Bootstrap</li>
-                  <li>Ruby</li>
-                </ul>
-              </div>
-
-              <button type="submit">See Project</button>
-            </aside>
-          </li>
-
-          <li class="work-card project-4">
-            <div class="square ellipse-4"></div>
-            <div class="card card-4"></div>
-            <aside>
-              <h3>Multi-Post Stories</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-
-              <div class="stack-used">
-                <ul>
-                  <li class="stack">Css</li>
-                  <li class="stack">Html</li>
-                  <li class="stack">Bootstrap</li>
-                  <li>Ruby</li>
-                </ul>
-              </div>
-
-              <button type="submit">See Project</button>
-            </aside>
-          </li>
+        <ul class="all-cards" id="card-list">
         </ul>
       </section>
 
@@ -297,7 +197,9 @@
         >
       </footer>
     </main>
-
-    <script src="main.js"></script>
+    <div id="modal-div"></div>
+    <div class="overlay"></div>
+    <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

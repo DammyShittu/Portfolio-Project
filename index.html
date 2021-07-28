@@ -147,7 +147,7 @@
           </p>
         </div>
 
-        <form action="https://formspree.io/f/mbjqagag" method="POST">
+        <form action="https://formspree.io/f/mbjqagag" method="POST" id="form">
           <div class="form-1">
             <input
               type="text"
@@ -162,6 +162,7 @@
               type="email"
               name="user_email"
               placeholder="johndoe@email.com"
+              id="email"
               required
             />
           </div>
@@ -173,6 +174,7 @@
             placeholder="Write Your Message Here"
             required
           ></textarea>
+          <span class="error"></span>
           <div class="btn-1">
             <button type="submit">Send A Message</button>
           </div>

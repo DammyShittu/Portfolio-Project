@@ -48,6 +48,12 @@ function formData() {
   window.localStorage.setItem('formInfo', JSON.stringify(formInput));
 }
 
-window.onload = function(){
+window.onload = () => {
   document.getElementById('form').onsubmit = formData;
 };
+
+if (!window.localStorage.getItem('nameInput')) {
+  formData();
+} else {
+  getFormData();
+}

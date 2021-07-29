@@ -32,3 +32,7 @@ form.addEventListener('submit', (e) => {
     textarea.style.marginBottom = '10px';
   }
 });
+
+// Local Storage
+const nameInput = document.getElementById('name');
+const formData = [nameInput, email, textarea];

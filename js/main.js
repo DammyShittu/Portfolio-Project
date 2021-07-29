@@ -34,26 +34,45 @@ form.addEventListener('submit', (e) => {
 });
 
 // Local Storage
+const userName = document.getElementById('name');
+// Update User Data
 
-function formData() {
-  const nameInput = document.getElementById('name').value;
-  const emailInput = document.getElementById('email').value;
-  const messageInput = document.getElementById('message').value;
+const getFormData = JSON.parse(localStorage.getItem('formInput'));
+
+if (getFormData) {
+  userName.value = getFormData.username;
+  email.value = getFormData.email;
+  textarea.value = getFormData.message;
+}
+
+function formInfo() {
+  const nameInput = userName.value;
+  const emailInput = email.value;
+  const messageInput = textarea.value;
+
   const formInput = {
-    name: nameInput,
+    username: nameInput,
     email: emailInput,
     message: messageInput,
   };
 
-  window.localStorage.setItem('formInfo', JSON.stringify(formInput));
+  localStorage.setItem('formInput', JSON.stringify(formInput));
 }
 
-window.onload = () => {
-  document.getElementById('form').onsubmit = formData;
-};
+// function validateEmail() {
+//   const newInput = JSON.parse(localStorage.getItem('formInput'));
 
-if (!window.localStorage.getItem('nameInput')) {
-  formData();
-} else {
-  getFormData();
-}
+//   if (email.value.toLowerCase() !== email.value) {
+//     newInput[email] = '';
+//   }
+// }
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  formInfo();
+  validateEmail();
+});
+
+userName.onchange = formInfo;
+email.onchange = formInfo;
+textarea.onchange = formInfo;

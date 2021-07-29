@@ -34,5 +34,20 @@ form.addEventListener('submit', (e) => {
 });
 
 // Local Storage
-const nameInput = document.getElementById('name');
-const formData = [nameInput, email, textarea];
+
+function formData() {
+  const nameInput = document.getElementById('name').value;
+  const emailInput = document.getElementById('email').value;
+  const messageInput = document.getElementById('message').value;
+  const formInput = {
+    name: nameInput,
+    email: emailInput,
+    message: messageInput,
+  };
+
+  window.localStorage.setItem('formInfo', JSON.stringify(formInput));
+}
+
+window.onload = function(){
+  document.getElementById('form').onsubmit = formData;
+};

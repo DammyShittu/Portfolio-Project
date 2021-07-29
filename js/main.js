@@ -35,8 +35,8 @@ form.addEventListener('submit', (e) => {
 
 // Local Storage
 const userName = document.getElementById('name');
-// Update User Data
 
+// Update User Data
 const getFormData = JSON.parse(localStorage.getItem('formInput'));
 
 if (getFormData) {
@@ -45,6 +45,7 @@ if (getFormData) {
   textarea.value = getFormData.message;
 }
 
+// setItem To Local Storage
 function formInfo() {
   const nameInput = userName.value;
   const emailInput = email.value;
@@ -59,18 +60,11 @@ function formInfo() {
   localStorage.setItem('formInput', JSON.stringify(formInput));
 }
 
-// function validateEmail() {
-//   const newInput = JSON.parse(localStorage.getItem('formInput'));
-
-//   if (email.value.toLowerCase() !== email.value) {
-//     newInput[email] = '';
-//   }
-// }
+// Event Listeners
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   formInfo();
-  validateEmail();
 });
 
 userName.onchange = formInfo;

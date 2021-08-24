@@ -80,7 +80,9 @@ const workProjects = [
 function createCard(project) {
   let worksText = `<li class="work-card project-1">
                   <div class="square ellipse"></div>
-                  <div class="card"></div>
+                  <div class="card">
+                  <img src="${project.image.imageUrl}" alt="${project.image.imageAlt}">
+                  </div>
                   <aside class="aside-1">
                     <h3>${project.title}</h3>
                     <p>${project.shortDescription}</p>
@@ -111,10 +113,10 @@ function createModal(project) {
                   <div class="stack-used stack-used-1">
                   <ul>`;
   for (let i = 0; i < project.technologies.length; i += 1) {
-    worksText += `<li class="stack>${project.technologies[i]}</li>`;
+    worksText += `<li class="stack">${project.technologies[i]}</li>`;
   }
   worksText += `</ul>
-                  </div>
+                </div>
                   <div class="modal-btn">
                   <button type="submit" class="modalBtn"><a href="${project.seeLive}">See Live
                     <img src="./img/file.png" alt="See Live Icon" class="button-img"></a>
@@ -164,4 +166,14 @@ document.querySelectorAll('.modal-close').forEach((close) => {
     mainPage.style.display = 'block';
     header.style.display = 'flex';
   });
+});
+
+// Change Order Of Project Images With Odd Indexes
+const cards = document.querySelectorAll('.card');
+cards.forEach((card, index) => {
+  if (window.screen.width > 800 && (index === 0 || index % 2 === 0)) {
+    card.style.order = '0';
+  } else {
+    card.style.order = '1';
+  }
 });

@@ -1,7 +1,7 @@
 const workProjects = [
   {
-    title: 'Multi-Post Stories',
-    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    title: 'WeSingAfrica Gospel Concert',
+    shortDescription: 'WeSingAfrica Gospel Concert is a fictional annual worship concert that holds in Africa. This project showcases the Home and About Pages with sections relating to the event\'s programs, previous events gallery and invited guests.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
     unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -12,12 +12,12 @@ const workProjects = [
     It has survived not only five centuries, but also the leap into electronic typesetting, 
     remaining essent`,
     image: {
-      imageUrl: './img/mobile-snapshot.png',
+      imageUrl: './img/wesing.png',
       imageAlt: 'Mobile Snapshot',
     },
-    technologies: ['Html', 'Ruby on rails', 'Css', 'Github'],
-    seeLive: 'index.html',
-    sourceUrl: 'https://github.com/DammyShittu/Portfolio-Project',
+    technologies: ['HTML','CSS', 'JavaScript', 'Github'],
+    seeLive: 'https://dammyshittu.github.io/WeSingAfrica-Capstone/',
+    sourceUrl: 'https://github.com/DammyShittu/WeSingAfrica-Capstone',
   },
   {
     title: 'Multi-Post Stories',
@@ -118,12 +118,14 @@ function createModal(project) {
   worksText += `</ul>
                 </div>
                   <div class="modal-btn">
-                  <button type="submit" class="modalBtn"><a href="${project.seeLive}">See Live
+                  <button type="submit" class="modalBtn"><a href="${project.seeLive}" target="_blank">See Live
                     <img src="./img/file.png" alt="See Live Icon" class="button-img"></a>
                   </button>
-                  <button type="submit" class="modalBtn"><a href="${project.sourceUrl}" target="_blank">See Source
+                  <button type="submit" class="modalBtn"><a href="${project.sourceUrl}">See Source
                   <img src="./img/git.png" alt="See Source Icon" class="button-img"></a>
                   </button>
+                  </div>
+                  </div>
                 </section>`;
 
   return worksText;
@@ -148,10 +150,15 @@ worksList.onload = insertHtml();
 
 const mainPage = document.querySelector('#main-page');
 const header = document.getElementById('page-header');
+const modal = document.querySelectorAll('.modal');
 
-document.querySelectorAll('.project-btn').forEach((open) => {
+document.querySelectorAll('.project-btn').forEach((open, index) => {
   open.addEventListener('click', () => {
-    document.querySelector('.modal').style.display = 'block';
+    modal.forEach((item, i) => {
+      if (index === i) {
+        item.style.display = 'block';
+      }
+    });
     mainPage.style.display = 'none';
     header.style.display = 'none';
   });
@@ -169,11 +176,12 @@ document.querySelectorAll('.modal-close').forEach((close) => {
 });
 
 // Change Order Of Project Images With Odd Indexes
-const cards = document.querySelectorAll('.card');
-cards.forEach((card, index) => {
-  if (window.screen.width > 800 && (index === 0 || index % 2 === 0)) {
-    card.style.order = '0';
-  } else {
-    card.style.order = '1';
-  }
-});
+// This code has been left intentionally to address the issue of project image order.
+// const cards = document.querySelectorAll('.card');
+// cards.forEach((card, index) => {
+//   if (index === 0 || index % 2 === 0) {
+//     card.style.order = '0';
+//   } else {
+//     card.style.order = '1';
+//   }
+// });

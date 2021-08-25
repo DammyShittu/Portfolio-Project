@@ -15,7 +15,7 @@ const workProjects = [
       imageUrl: './img/wesing.png',
       imageAlt: 'Mobile Snapshot',
     },
-    technologies: ['HTML','CSS', 'JavaScript', 'Github'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Github'],
     seeLive: 'https://dammyshittu.github.io/WeSingAfrica-Capstone/',
     sourceUrl: 'https://github.com/DammyShittu/WeSingAfrica-Capstone',
   },

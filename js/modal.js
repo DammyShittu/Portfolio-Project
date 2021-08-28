@@ -20,8 +20,8 @@ const workProjects = [
     sourceUrl: 'https://github.com/DammyShittu/WeSingAfrica-Capstone',
   },
   {
-    title: 'Multi-Post Stories',
-    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    title: 'Todo List App',
+    shortDescription: 'Todo List App is an app that helps you keep track of all the activities you need to execute over a period of time. Tasks can be added, marked as completed and deleted. You can edit a task by double clicking on the task title section.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
     unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -32,12 +32,12 @@ const workProjects = [
     It has survived not only five centuries, but also the leap into electronic typesetting, 
     remaining essent`,
     image: {
-      imageUrl: './img/mobile-snapshot.png',
+      imageUrl: './img/todo.png',
       imageAlt: 'Mobile Snapshot',
     },
-    technologies: ['Html', 'Ruby on rails', 'Css', 'Github'],
-    seeLive: 'index.html',
-    sourceUrl: 'https://github.com/DammyShittu/Portfolio-Project',
+    technologies: ['Html', 'Css', 'JavaScript', 'Webpack'],
+    seeLive: 'https://dammyshittu.github.io/ToDo-List-App/',
+    sourceUrl: 'https://github.com/DammyShittu/ToDo-List-App',
   },
   {
     title: 'Multi-Post Stories',

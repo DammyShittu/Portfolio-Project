@@ -232,7 +232,7 @@ h1 {
 .work-card aside h3 {
   font-weight: 500;
   font-size: 32px;
-  line-height: 80px;
+  line-height: 50px;
   display: flex;
   align-items: center;
   color: #fff;
@@ -342,7 +342,7 @@ h1 {
 /* Works Section */
 
 #works {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   margin-top: 15%;
 }
@@ -362,7 +362,7 @@ h1 {
   display: grid;
   grid-gap: 80px;
   width: 100%;
-  margin: 50px 0;
+  margin: 80px 0;
   padding: 0;
 }
 
@@ -416,13 +416,16 @@ h1 {
 
 .card {
   width: 100%;
-  height: 350px;
-  background: linear-gradient(0deg, #fff, #fff);
+  height: 250px;
   flex: none;
-  order: 0;
   flex-grow: 0;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
 }
 
 .card:hover {
@@ -457,7 +460,6 @@ h1 {
   line-height: 28px;
   color: #dcdce8;
   flex: none;
-  order: 1;
   margin: 24px 0;
 }
 
@@ -466,17 +468,16 @@ h1 {
 }
 
 .stack-used ul {
-  display: flex;
-  gap: 20px;
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
-  align-items: center;
 }
 
 .stack-used ul li {
+  display: inline-block;
+  margin-right: 10px;
   list-style: none;
-  padding-right: 20px;
+  padding-right: 15px;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -487,6 +488,11 @@ h1 {
 
 .stack {
   border-right: 1px solid #646369;
+}
+
+.stack-used-1 ul li {
+  margin-right: 10px;
+  padding-right: 5px;
 }
 
 .card-2,
@@ -501,7 +507,7 @@ h1 {
 /* Contact Us Section */
 
 #contact {
-  width: 90%;
+  width: 85%;
   margin: 25% auto;
   overflow: hidden;
   display: flex;
@@ -625,11 +631,10 @@ footer {
 
 .modal-img img {
   width: 100%;
-  margin-bottom: 20px;
+  margin: 30px 0;
 }
 
-.modal-body,
-.stack-used-1 {
+.modal-body {
   text-align: center;
   margin: 0 auto;
 }
@@ -718,8 +723,6 @@ footer {
   }
 
   #works {
-    width: 85%;
-    margin: 0 auto;
     margin-top: 12%;
   }
 
@@ -734,11 +737,7 @@ footer {
 
   .card {
     width: 55%;
-  }
-
-  .card-2,
-  .card-4 {
-    order: 1;
+    height: 350px;
   }
 
   .work-card aside {

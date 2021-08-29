@@ -33,15 +33,15 @@ const workProjects = [
     remaining essent`,
     image: {
       imageUrl: './img/todo.png',
-      imageAlt: 'Mobile Snapshot',
+      imageAlt: 'ToDo List',
     },
     technologies: ['Html', 'Css', 'JavaScript', 'Webpack'],
     seeLive: 'https://dammyshittu.github.io/ToDo-List-App/',
     sourceUrl: 'https://github.com/DammyShittu/ToDo-List-App',
   },
   {
-    title: 'Multi-Post Stories',
-    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    title: 'Awesome Books',
+    shortDescription: 'Awesome Books App is a Single-Page Application(SPA) that allows you to add books by typing in the book title and author name.',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
     unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -52,12 +52,12 @@ const workProjects = [
     It has survived not only five centuries, but also the leap into electronic typesetting, 
     remaining essent`,
     image: {
-      imageUrl: './img/mobile-snapshot.png',
-      imageAlt: 'Mobile Snapshot',
+      imageUrl: './img/awesome-books.png',
+      imageAlt: 'Awesome Books',
     },
-    technologies: ['Html', 'Ruby on rails', 'Css', 'Github'],
-    seeLive: 'index.html',
-    sourceUrl: 'https://github.com/DammyShittu/Portfolio-Project',
+    technologies: ['Html', 'Css', 'JavaScript', 'Github'],
+    seeLive: 'https://dammyshittu.github.io/Awesome-Books/',
+    sourceUrl: 'https://github.com/DammyShittu/Awesome-Books',
   },
   {
     title: 'Multi-Post Stories',

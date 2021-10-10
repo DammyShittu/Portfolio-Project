@@ -1,16 +1,40 @@
 const workProjects = [
   {
+    title: 'Space Travelers\' Hub',
+    description: 'Space Travelers\' Hub is single-paged application (SPA) with 3 subpages, Rockets,Missions and My Profile. Data for rockets and missions pages was fetched from rocket_API and mission_API. This project allows user to do rocket reservation and cancellation. It also allows users to join and leave missions. These actions are reflected on My Profile page. Lastly, Kanban Board was used to collaborate for this project.',
+    image: {
+      imageUrl: './img/rockets-page.png',
+      imageAlt: 'Space Travelers\' Hub',
+    },
+    technologies: ['React', 'Redux', 'CSS', 'Github'],
+    seeLive: 'https://space-hub.netlify.app/',
+    sourceUrl: 'https://github.com/DammyShittu/react-spacex',
+  },
+  {
+    title: 'Math Magicians',
+    description: 'Math magicians is a web-app for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, and read a random math-related quote. It consists of three(3) page sections, "Home", "Calculator", and "Quote". The Home page shows the introdutory message to the app, the Calculator page contains a calculator app where users can perform mathematical operations, while the Quote page display a mathematical quote.',
+    image: {
+      imageUrl: './img/home.png',
+      imageAlt: 'Math Magicians',
+    },
+    technologies: ['React', 'Redux', 'CSS', 'Jest', 'Github'],
+    seeLive: 'https://maths-magicians.netlify.app/',
+    sourceUrl: 'https://github.com/DammyShittu/Math-Magicians',
+  },
+  {
+    title: 'Bookstore',
+    description: 'Bookstore is a single-paged application with two subpages, Books and Categories. Books are displayed in the Books page while the Categories page is currently being worked on. Bookstore allows users to add their favorite book(s) and delete selected book(s).',
+    image: {
+      imageUrl: './img/bookstore.png',
+      imageAlt: 'Bookstore',
+    },
+    technologies: ['React', 'Redux', 'CSS', 'Github'],
+    seeLive: 'https://dammy-bookstore.netlify.app/',
+    sourceUrl: 'https://github.com/DammyShittu/Bookstore-React-Redux',
+  },
+  {
     title: 'WeSingAfrica Gospel Concert',
-    shortDescription: 'WeSingAfrica Gospel Concert is a fictional annual worship concert that holds in Africa. This project showcases the Home and About Pages with sections relating to the event\'s programs, previous events gallery and invited guests.',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-    unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    It has survived not only five centuries, but also the leap into electronic typesetting, 
-    remaining essent, Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-    unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    It has survived not only five centuries, but also the leap into electronic typesetting, 
-    remaining essent`,
+    description: 'WeSingAfrica Gospel Concert is a fictional annual worship concert that holds in Africa. This project showcases the Home and About Pages with sections relating to the event\'s programs, previous events gallery and invited guests.',
     image: {
       imageUrl: './img/wesing.png',
       imageAlt: 'Mobile Snapshot',
@@ -21,59 +45,25 @@ const workProjects = [
   },
   {
     title: 'Todo List App',
-    shortDescription: 'Todo List App is an app that helps you keep track of all the activities you need to execute over a period of time. Tasks can be added, marked as completed and deleted. You can edit a task by double clicking on the task title section.',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-    unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    It has survived not only five centuries, but also the leap into electronic typesetting, 
-    remaining essent, Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-    unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    It has survived not only five centuries, but also the leap into electronic typesetting, 
-    remaining essent`,
+    description: 'Todo List App is an app that helps you keep track of all the activities you need to execute over a period of time. Tasks can be added, marked as completed and deleted. You can edit a task by double clicking on the task title section.',
     image: {
       imageUrl: './img/todo.png',
       imageAlt: 'ToDo List',
     },
-    technologies: ['Html', 'Css', 'JavaScript', 'Webpack'],
+    technologies: ['Html', 'CSS', 'JavaScript', 'Webpack'],
     seeLive: 'https://dammyshittu.github.io/ToDo-List-App/',
     sourceUrl: 'https://github.com/DammyShittu/ToDo-List-App',
   },
   {
     title: 'Awesome Books',
-    shortDescription: 'Awesome Books App is a Single-Page Application(SPA) that allows you to add books by typing in the book title and author name.',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-    unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    It has survived not only five centuries, but also the leap into electronic typesetting, 
-    remaining essent, Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-    unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    It has survived not only five centuries, but also the leap into electronic typesetting, 
-    remaining essent`,
+    description: 'Awesome Books App is a Single-Page Application(SPA) that allows you to add books by typing in the book title and author name.',
     image: {
       imageUrl: './img/awesome-books.png',
       imageAlt: 'Awesome Books',
     },
-    technologies: ['Html', 'Css', 'JavaScript', 'Github'],
+    technologies: ['Html', 'CSS', 'JavaScript', 'Github'],
     seeLive: 'https://dammyshittu.github.io/Awesome-Books/',
     sourceUrl: 'https://github.com/DammyShittu/Awesome-Books',
-  },
-  {
-    title: 'Multi-Post Stories',
-    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-    unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    It has survived not only five centuries, but also the leap into electronic typesetting, 
-    remaining essent.`,
-    image: {
-      imageUrl: './img/mobile-snapshot.png',
-      imageAlt: 'Mobile Snapshot',
-    },
-    technologies: ['Html', 'Ruby on rails', 'Css', 'Github'],
-    seeLive: 'index.html',
-    sourceUrl: 'https://github.com/DammyShittu/Portfolio-Project',
   },
 ];
 
@@ -85,7 +75,7 @@ function createCard(project) {
                   </div>
                   <aside class="aside-1">
                     <h3>${project.title}</h3>
-                    <p>${project.shortDescription}</p>
+                    <p>${project.description}</p>
                     <div class="stack-used">
                       <ul>`;
   for (let i = 0; i < project.technologies.length; i += 1) {
@@ -150,6 +140,7 @@ worksList.onload = insertHtml();
 
 const mainPage = document.querySelector('#main-page');
 const header = document.getElementById('page-header');
+const footer = document.getElementById('footer');
 const modal = document.querySelectorAll('.modal');
 
 document.querySelectorAll('.project-btn').forEach((open, index) => {
@@ -161,6 +152,7 @@ document.querySelectorAll('.project-btn').forEach((open, index) => {
     });
     mainPage.style.display = 'none';
     header.style.display = 'none';
+    footer.style.display = 'none';
   });
 });
 
@@ -172,6 +164,7 @@ document.querySelectorAll('.modal-close').forEach((close) => {
 
     mainPage.style.display = 'block';
     header.style.display = 'flex';
+    footer.style.display = 'flex';
   });
 });
 

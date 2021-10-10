@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -14,8 +15,8 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-header {
-  height: 100px;
+#page-header {
+  height: 80px;
   width: 85%;
   display: flex;
   justify-content: space-between;
@@ -25,13 +26,13 @@ header {
 
 button {
   background: #483ed3;
-  padding: 10px;
+  padding: 15px;
   min-width: 80px;
   max-width: 150px;
   outline: none;
   cursor: pointer;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   order: 3;
   border: 0;
   border-radius: 5px;
@@ -154,10 +155,6 @@ footer a:hover {
 }
 
 /* Navbar */
-#page_logo {
-  animation: rotate 3s;
-}
-
 #page_logo a {
   font-size: 25px;
   font-style: normal;
@@ -548,6 +545,11 @@ textarea {
   width: 100%;
 }
 
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
 .form-1 {
   display: flex;
   flex-direction: column;
@@ -561,7 +563,8 @@ textarea {
 
 input:hover,
 textarea:hover {
-  transform: translateX(10px);
+  transform: scale(1.02);
+  transition: transform 300ms;
 }
 
 input:focus,
@@ -594,13 +597,25 @@ footer {
   border-top: 1px solid #4d4c4f;
 }
 
+.go-up {
+  border: 1px solid rgb(238, 235, 235);
+  border-radius: 50%;
+  padding: 5px 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  cursor: pointer;
+  transition: 300ms;
+  display: none;
+}
+
 /* Modal */
 .modal {
   width: 90%;
   height: auto;
   margin: 0 auto;
-  background: rgba(184, 184, 184, 0.16);
-  border: 1px solid #fff;
+  background: inherit;
+  border: 2px solid #fff;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   position: fixed;
   top: 25px;
@@ -611,6 +626,8 @@ footer {
   overflow-x: hidden;
   display: none;
   z-index: 999;
+  border-radius: 8px;
+  animation: zoom 1s ease-in;
 }
 
 .modal-menu {
@@ -631,7 +648,8 @@ footer {
 
 .modal-img img {
   width: 100%;
-  margin: 30px 0;
+  margin: 30px auto;
+  text-align: center;
 }
 
 .modal-body {
@@ -651,6 +669,14 @@ footer {
 .modal-btn button {
   margin: 0 20px 30px 20px;
   padding: 10px;
+}
+
+.nav-colored {
+  background-color: rgb(26, 26, 72);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: 200ms ease-in-out;
 }
 
 /* Media Queries */
@@ -782,7 +808,7 @@ footer {
   }
 
   .modal {
-    width: 85%;
+    width: 65%;
   }
 
   .modal-menu p {
@@ -798,12 +824,7 @@ footer {
   }
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes zoom {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }

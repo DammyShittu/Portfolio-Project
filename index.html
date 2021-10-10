@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Dammy's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -23,25 +25,28 @@
 </div>
 <!-- End Of Mobile Menu -->
   <!-- Header Section -->
-    <header id="page-header">
-      <div id="page_logo">
-        <a href="#">Dammy Shittu</a>
+    <header class="header">
+      <div id="page-header">
+        <div id="page_logo">
+          <a href="#">Dammy Shittu</a>
+        </div>
+  
+        <nav id="page-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="#"
+                ><img src="./img/Message.png" alt="Email Icon"
+              /></a>
+            </li>
+          </ul>
+          <img src="./img/union.png" alt="Menu Hamburger" class="hamburger" id="hamburger-icon"/>
+        </nav>
       </div>
-
-      <nav id="page-nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#works">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <a
-              href="#"
-              ><img src="./img/Message.png" alt="Email Icon"
-            /></a>
-          </li>
-        </ul>
-        <img src="./img/union.png" alt="Menu Hamburger" class="hamburger" id="hamburger-icon"/>
-      </nav>
+      
     </header>
 
     <!-- End of Header Section -->
@@ -147,7 +152,10 @@
           </p>
         </div>
 
-        <form id="form">
+        <form id="form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+          <p class="hidden">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
           <div class="form-1">
             <input
               type="text"
@@ -180,27 +188,30 @@
           </div>
         </form>
       </section>
-
-      <!-- Footer -->
-
-      <footer>
-        <div class="media-links">
-          <a href="https://github.com/DammyShittu"><img src="./img/Vector.png" alt="Github" /></a>
-          <a href="https://www.linkedin.com/in/adedamola-shittu-3ab465172/"><img src="./img/Disabled.png" alt="LinkedIn" /></a>
-          <a href="#"><img src="./img/Enabled.png" alt="Angelist" /></a>
-          <a href="https://twitter.com/aded_shittu"><img src="./img/Twitter.png" alt="Twitter" /></a>
-          <a href="#"><img src="./img/Medium.png" alt="Medium" /></a>
-        </div>
-
-        <a
-          href="mailto:shittuadedamola@rocketmail.com?subject=Hi,%20I'd%20Love%20To%20Work%20With%20You!"
-          class="mail"
-          >shittuadedamola@rocketmail.com</a
-        >
-      </footer>
     </main>
+    <!-- Footer -->
+
+    <footer id="footer">
+      <div class="media-links">
+        <a href="https://github.com/DammyShittu"><img src="./img/Vector.png" alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/adedamola-shittu-3ab465172/"><img src="./img/Disabled.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="./img/Enabled.png" alt="Angelist" /></a>
+        <a href="https://twitter.com/aded_shittu"><img src="./img/Twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="./img/Medium.png" alt="Medium" /></a>
+      </div>
+
+      <a
+        href="mailto:shittuadedamola@rocketmail.com?subject=Hi,%20I'd%20Love%20To%20Work%20With%20You!"
+        class="mail"
+        >shittuadedamola@rocketmail.com</a
+      >
+
+      <div class="go-up">
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </footer>
+
     <div id="modal-div"></div>
-    <div class="overlay"></div>
     <script src="./js/main.js"></script>
     <script src="./js/modal.js"></script>
   </body>

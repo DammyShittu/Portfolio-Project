@@ -24,6 +24,7 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.querySelector('.error');
 const textarea = document.getElementById('message');
+const userName = document.getElementById('name');
 form.addEventListener('submit', (e) => {
   if (email.value.toLowerCase() !== email.value) {
     e.preventDefault();
@@ -34,16 +35,6 @@ form.addEventListener('submit', (e) => {
 });
 
 // Local Storage
-const userName = document.getElementById('name');
-
-// Update User Data
-const getFormData = JSON.parse(localStorage.getItem('formInput'));
-
-if (getFormData) {
-  userName.value = getFormData.username;
-  email.value = getFormData.email;
-  textarea.value = getFormData.message;
-}
 
 // setItem To Local Storage
 function formInfo() {
@@ -65,8 +56,21 @@ function formInfo() {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   formInfo();
+  form.reset();
 });
 
 userName.onchange = formInfo;
 email.onchange = formInfo;
 textarea.onchange = formInfo;
+
+const newHeader = document.querySelector('.header');
+const goUp = document.querySelector('.go-up');
+window.onscroll = () => {
+  if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+    newHeader.classList.add('nav-colored');
+    goUp.style.display = 'block';
+  } else {
+    newHeader.classList.remove('nav-colored');
+    goUp.style.display = 'none';
+  }
+};

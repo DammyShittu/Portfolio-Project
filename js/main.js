@@ -24,7 +24,6 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.querySelector('.error');
 const textarea = document.getElementById('message');
-const userName = document.getElementById('name');
 form.addEventListener('submit', (e) => {
   if (email.value.toLowerCase() !== email.value) {
     e.preventDefault();
@@ -33,35 +32,6 @@ form.addEventListener('submit', (e) => {
     textarea.style.marginBottom = '10px';
   }
 });
-
-// Local Storage
-
-// setItem To Local Storage
-function formInfo() {
-  const nameInput = userName.value;
-  const emailInput = email.value;
-  const messageInput = textarea.value;
-
-  const formInput = {
-    username: nameInput,
-    email: emailInput,
-    message: messageInput,
-  };
-
-  localStorage.setItem('formInput', JSON.stringify(formInput));
-}
-
-// Event Listeners
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  formInfo();
-  form.reset();
-});
-
-userName.onchange = formInfo;
-email.onchange = formInfo;
-textarea.onchange = formInfo;
 
 const newHeader = document.querySelector('.header');
 const goUp = document.querySelector('.go-up');

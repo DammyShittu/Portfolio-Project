@@ -5,7 +5,9 @@ This project contains my portfolio, coded according to requirements provided by 
 # Project Name
 
 **My Portfolio Project**
+# Live Website
 
+Click [here](https://dammy-portfolio.netlify.app/) to view the website online.
 # Screenshot
 
 ## Desktop View 
@@ -20,10 +22,6 @@ Width - 375px
 
 ![Image of the mobile view](./img/mobile-view.png)
 
-
-# Live Website
-
-Click [here](https://dammyshittu.github.io/Portfolio-Project/) to view the website online.
 
 # This project was built with:
 
@@ -41,7 +39,7 @@ GIT
 
 # Hosting Platform
 
-Github
+Netlify
 
 # Template Source
 

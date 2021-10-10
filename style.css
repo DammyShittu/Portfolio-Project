@@ -603,7 +603,7 @@ footer {
   padding: 5px 10px;
   position: fixed;
   bottom: 20px;
-  right: 50px;
+  right: 10px;
   cursor: pointer;
   transition: 300ms;
   display: none;
@@ -814,6 +814,10 @@ footer {
   .modal-menu p {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .go-up {
+    right: 40px;
   }
 }
 

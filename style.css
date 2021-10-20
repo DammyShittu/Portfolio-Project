@@ -63,7 +63,7 @@ footer a:hover {
 
 /* Mobile Menu */
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background-color: #191765;
@@ -457,6 +457,7 @@ h1 {
   line-height: 28px;
   color: #dcdce8;
   flex: none;
+  text-align: justify;
   margin: 24px 0;
 }
 
@@ -603,7 +604,7 @@ footer {
   padding: 5px 10px;
   position: fixed;
   bottom: 20px;
-  right: 50px;
+  right: 10px;
   cursor: pointer;
   transition: 300ms;
   display: none;
@@ -762,8 +763,8 @@ footer {
   }
 
   .card {
-    width: 55%;
-    height: 350px;
+    width: 50%;
+    height: 410px;
   }
 
   .work-card aside {
@@ -814,6 +815,10 @@ footer {
   .modal-menu p {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .go-up {
+    right: 40px;
   }
 }
 

@@ -1,5 +1,16 @@
 const workProjects = [
   {
+    title: 'Covid19 Metrics',
+    description: 'Covid19 Metrics is a single-page application (SPA) that showcases Covid19 data for one hundred and ninety-five(195) countries. The data being showcased was fetched from the Narrativa API. The fetched data is being displayed in cards on the Home page, while data for each country\'s region is being displayed on the Details page. Countries with empty regional data display an informative text to tell users about the unavailable regional data.',
+    image: {
+      imageUrl: './img/world-screenshot.png',
+      imageAlt: 'World Covid19 Cases',
+    },
+    technologies: ['React', 'Redux', 'Jest', 'CSS'],
+    seeLive: 'https://worlds-covid19.netlify.app/',
+    sourceUrl: 'https://github.com/DammyShittu/Covid19-Metrics-App',
+  },
+  {
     title: 'Space Travelers\' Hub',
     description: 'Space Travelers\' Hub is single-paged application (SPA) with 3 subpages, Rockets,Missions and My Profile. Data for rockets and missions pages was fetched from rocket_API and mission_API. This project allows user to do rocket reservation and cancellation. It also allows users to join and leave missions. These actions are reflected on My Profile page. Lastly, Kanban Board was used to collaborate for this project.',
     image: {
@@ -33,17 +44,6 @@ const workProjects = [
     sourceUrl: 'https://github.com/DammyShittu/Bookstore-React-Redux',
   },
   {
-    title: 'WeSingAfrica Gospel Concert',
-    description: 'WeSingAfrica Gospel Concert is a fictional annual worship concert that holds in Africa. This project showcases the Home and About Pages with sections relating to the event\'s programs, previous events gallery and invited guests.',
-    image: {
-      imageUrl: './img/wesing.png',
-      imageAlt: 'Mobile Snapshot',
-    },
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Github'],
-    seeLive: 'https://dammyshittu.github.io/WeSingAfrica-Capstone/',
-    sourceUrl: 'https://github.com/DammyShittu/WeSingAfrica-Capstone',
-  },
-  {
     title: 'Todo List App',
     description: 'Todo List App is an app that helps you keep track of all the activities you need to execute over a period of time. Tasks can be added, marked as completed and deleted. You can edit a task by double clicking on the task title section.',
     image: {
@@ -55,15 +55,15 @@ const workProjects = [
     sourceUrl: 'https://github.com/DammyShittu/ToDo-List-App',
   },
   {
-    title: 'Awesome Books',
-    description: 'Awesome Books App is a Single-Page Application(SPA) that allows you to add books by typing in the book title and author name.',
+    title: 'WeSingAfrica Gospel Concert',
+    description: 'WeSingAfrica Gospel Concert is a fictional annual worship concert that holds in Africa. This project showcases the Home and About Pages with sections relating to the event\'s programs, previous events gallery and invited guests.',
     image: {
-      imageUrl: './img/awesome-books.png',
-      imageAlt: 'Awesome Books',
+      imageUrl: './img/wesing.png',
+      imageAlt: 'Mobile Snapshot',
     },
-    technologies: ['Html', 'CSS', 'JavaScript', 'Github'],
-    seeLive: 'https://dammyshittu.github.io/Awesome-Books/',
-    sourceUrl: 'https://github.com/DammyShittu/Awesome-Books',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Github'],
+    seeLive: 'https://dammyshittu.github.io/WeSingAfrica-Capstone/',
+    sourceUrl: 'https://github.com/DammyShittu/WeSingAfrica-Capstone',
   },
 ];
 

@@ -1,5 +1,16 @@
 const workProjects = [
   {
+    title: 'TradeIt',
+    description: 'TradeIt is a mobile web application where you can manage your budget: you have a list of transactions associated with a category so that you can see how much money you spent and on what.',
+    image: {
+      imageUrl: './img/tradeit.png',
+      imageAlt: 'TradeIt',
+    },
+    technologies: ['Ruby', 'Rails', 'Bootstrap', 'Github'],
+    seeLive: 'https://stormy-lake-50200.herokuapp.com/',
+    sourceUrl: 'https://github.com/DammyShittu/TradeIt',
+  },
+  {
     title: 'Covid19 Metrics',
     description: 'Covid19 Metrics is a single-page application (SPA) that showcases Covid19 data for one hundred and ninety-five(195) countries. The data being showcased was fetched from the Narrativa API. The fetched data is being displayed in cards on the Home page, while data for each country\'s region is being displayed on the Details page. Countries with empty regional data display an informative text to tell users about the unavailable regional data.',
     image: {
@@ -31,17 +42,6 @@ const workProjects = [
     technologies: ['React', 'Redux', 'CSS', 'Jest', 'Github'],
     seeLive: 'https://maths-magicians.netlify.app/',
     sourceUrl: 'https://github.com/DammyShittu/Math-Magicians',
-  },
-  {
-    title: 'Bookstore',
-    description: 'Bookstore is a single-paged application with two subpages, Books and Categories. Books are displayed in the Books page while the Categories page is currently being worked on. Bookstore allows users to add their favorite book(s) and delete selected book(s).',
-    image: {
-      imageUrl: './img/bookstore.png',
-      imageAlt: 'Bookstore',
-    },
-    technologies: ['React', 'Redux', 'CSS', 'Github'],
-    seeLive: 'https://dammy-bookstore.netlify.app/',
-    sourceUrl: 'https://github.com/DammyShittu/Bookstore-React-Redux',
   },
   {
     title: 'Todo List App',

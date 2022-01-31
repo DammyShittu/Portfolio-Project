@@ -9,10 +9,14 @@
 }
 
 body {
-  background: #191765;
+  background-color: black;
   line-height: 1.6;
   color: #fff;
   font-family: Roboto, sans-serif;
+}
+
+header {
+  background-color: #121212d5;
 }
 
 #page-header {
@@ -66,7 +70,7 @@ footer a:hover {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: #191765;
+  background-color: #2b2b2c;
   top: 0;
   left: -110%;
   z-index: 100;
@@ -169,11 +173,23 @@ footer a:hover {
 /* Headline */
 
 .container {
+  background-color: #121212d5;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNvZnR3YXJlJTIwZW5naW5lZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  /* margin-top: 80px; */
+  padding-bottom: 50px;
+  position: relative;
 }
 
 h1 {
@@ -183,6 +199,7 @@ h1 {
   line-height: 72px;
   text-align: center;
   color: #7d73fc;
+  margin-top: 70px;
 }
 
 #portfolio-intro {
@@ -283,6 +300,24 @@ h1 {
   text-align: left;
   list-style: none;
   color: #f5f5ff;
+}
+
+.diagonal {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  transform: skewY(0deg);
+  /* margin-top: 200px; */
+}
+
+.svg-image {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
 }
 
 .sub-list {
@@ -673,7 +708,7 @@ footer {
 }
 
 .nav-colored {
-  background-color: rgb(26, 26, 72);
+  background-color: #2b2b2c;
   position: sticky;
   top: 0;
   z-index: 999;

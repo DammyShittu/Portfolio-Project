@@ -67,27 +67,27 @@ const workProjects = [
   },
 ];
 
-function createCard(project) {
-  let worksText = `<li class="work-card project-1">
-                  <div class="square ellipse"></div>
-                  <div class="card">
-                  <img src="${project.image.imageUrl}" alt="${project.image.imageAlt}">
-                  </div>
-                  <aside class="aside-1">
-                    <h3>${project.title}</h3>
-                    <p>${project.description}</p>
-                    <div class="stack-used">
-                      <ul>`;
-  for (let i = 0; i < project.technologies.length; i += 1) {
-    worksText += `<li class="stack">${project.technologies[i]}</li>`;
-  }
-  worksText += `</ul>
-                    </div>
-                    <button type="submit" class="project-btn">See Project</button>
-                  </aside>
-                </li>`;
-  return worksText;
-}
+// function createCard(project) {
+//   let worksText = `<li class="work-card project-1" data-aos="fade-left">
+//                   <div class="square ellipse"></div>
+//                   <div class="card">
+//                   <img src="${project.image.imageUrl}" alt="${project.image.imageAlt}">
+//                   </div>
+//                   <aside class="aside-1">
+//                     <h3>${project.title}</h3>
+//                     <p>${project.description}</p>
+//                     <div class="stack-used">
+//                       <ul>`;
+//   for (let i = 0; i < project.technologies.length; i += 1) {
+//     worksText += `<li class="stack">${project.technologies[i]}</li>`;
+//   }
+//   worksText += `</ul>
+//                     </div>
+//                     <button type="submit" class="project-btn">See Project</button>
+//                   </aside>
+//                 </li>`;
+//   return worksText;
+// }
 
 function createModal(project) {
   let worksText = `<section class="modal">
@@ -121,22 +121,22 @@ function createModal(project) {
   return worksText;
 }
 
-const worksList = document.querySelector('#works ul');
+// const worksList = document.querySelector('#works ul');
 const works = document.querySelector('#modal-div');
 function insertHtml() {
   const myWorks = Object.keys(workProjects);
   const myWorksLength = Object.keys(workProjects).length;
 
-  for (let i = 0; i < myWorksLength; i += 1) {
-    worksList.innerHTML += createCard(workProjects[myWorks[i]], i);
-  }
+  // for (let i = 0; i < myWorksLength; i += 1) {
+  //   worksList.innerHTML += createCard(workProjects[myWorks[i]], i);
+  // }
 
   for (let j = 0; j < myWorksLength; j += 1) {
     works.innerHTML += createModal(workProjects[myWorks[j]], j);
   }
 }
 
-worksList.onload = insertHtml();
+works.onload = insertHtml();
 
 const mainPage = document.querySelector('#main-page');
 const header = document.getElementById('page-header');

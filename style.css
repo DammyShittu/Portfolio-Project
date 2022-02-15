@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  background-color: #121212d5;
+  background-color: #2e2d2dd5;
 }
 
 #page-header {
@@ -44,14 +44,13 @@ button {
 }
 
 button:focus {
-  background: #5e42d7;
+  background: rgba(249, 116, 22, 0.693);
+  transition: all 300ms ease-in;
 }
 
 button:hover {
-  background-color: #7d73fc;
-  box-shadow: 0 8px 16px 0 #7d73fc7a;
+  opacity: 0.92;
   transform: scale(0.98);
-  transition: background-color 300ms ease-in;
 }
 
 footer a {
@@ -88,6 +87,8 @@ footer a:hover {
   list-style: none;
   margin: 35px auto;
   z-index: 999;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #b3b0b0;
 }
 
 .modal-btn button a {
@@ -133,17 +134,15 @@ footer a:hover {
   cursor: pointer;
 }
 
-/* Navbar */
-/* #page_logo a {
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-} */
+.close:hover {
+  transform: scale(0.97);
+}
+
+
+.hamburger:hover {
+  transform: rotate(360deg);
+  transition: transform 800ms ease-in-out;
+}
 
 #page_logo {
   width: 25%;
@@ -159,28 +158,34 @@ footer a:hover {
 /* Headline */
 
 .container1 {
+  height: 100vh;
   background-image: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.5)
+    rgba(46, 43, 43, 0.7),
+    rgba(28, 27, 27, 0.5)
     ),
-    url(https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNvZnR3YXJlJTIwZW5naW5lZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   padding-bottom: 50px;
   padding-top: 70px;
   position: relative;
 }
 
 #portfolio-intro {
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 34px;
   font-style: normal;
   font-weight: 700;
-  line-height: 72px;
+  line-height: 60px;
   text-align: center;
 }
 
@@ -207,6 +212,10 @@ h1 {
   overflow: hidden;
 }
 
+.program-img {
+  display: none;
+}
+
 .work-card aside h3 {
   font-weight: 500;
   font-size: 32px;
@@ -216,12 +225,13 @@ h1 {
 }
 
 #portfolio-intro h2 {
-  font-size: 32px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 500;
-  line-height: 44px;
+  line-height: 30px;
   text-align: center;
-  color: #dfe1e6;
+  color: rgba(249, 115, 22, 0.9);
+  font-style: italic;
 }
 
 .sub-list {
@@ -236,7 +246,6 @@ h1 {
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-  margin-top: 10px;
 }
 
 .work {
@@ -288,7 +297,6 @@ h1 {
 #works {
   width: 90%;
   margin: 0 auto;
-  margin-top: 5%;
   overflow: hidden;
 }
 
@@ -507,8 +515,12 @@ footer {
   background-color: #2b2b2c;
 }
 
+.mail {
+  font-size: 15px;
+}
+
 .go-up {
-  border: 1px solid rgb(238, 235, 235);
+  border: 1px solid #f97316e6;
   border-radius: 50%;
   padding: 5px 10px;
   position: fixed;
@@ -517,6 +529,10 @@ footer {
   cursor: pointer;
   transition: 300ms;
   display: none;
+}
+
+.go-up i {
+  color: rgba(249, 115, 22, 0.9);
 }
 
 .stack-used-1,
@@ -589,12 +605,7 @@ footer {
   }
 
   .container1 {
-    height: calc(100vh - 80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    height: calc(100vh - 70px);
   }
 
   h1 {
@@ -602,25 +613,31 @@ footer {
     line-height: 100px;
   }
 
+  #portfolio-intro h2 {
+    font-size: 33px;
+    margin-bottom: 40px;
+  }
+
   #about h2 {
-    width: 40%;
+    width: 70%;
+    line-height: 40px;
     margin: 0 auto;
     margin-bottom: 40px;
   }
 
+  .media-section {
+    width: 100%;
+  }
+
   #media {
     flex-direction: row;
+    align-items: baseline;
     width: 80%;
     margin: 0 auto;
-    margin-top: 40px;
   }
 
   .first {
     display: block;
-  }
-
-  #works {
-    margin-top: 5%;
   }
 
   #works h2,
@@ -660,7 +677,7 @@ footer {
   }
 
   #contact {
-    margin: 12% auto;
+    margin: 9% auto;
   }
 
   .contact-head p {
@@ -681,15 +698,61 @@ footer {
     visibility: hidden;
   }
 
+  .mail {
+    font-size: 18px;
+  }
+
   .go-up {
     right: 40px;
   }
 }
 
 @media all and (min-width: 1200px) {
-  .ellipse-2,
-  .ellipse-4 {
-    left: 90%;
+  .container1 {
+    flex-direction: row;
+  }
+
+  #portfolio-intro {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .headline {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  h1,
+  #about h2,
+  #portfolio-intro h2 {
+    text-align: initial;
+  }
+
+  h1 {
+    line-height: 30px;
+    margin: 30px auto;
+  }
+
+  #about h2 {
+    width: 80%;
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: cursive;
+  }
+
+  #portfolio-intro h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  .program-img {
+    display: block;
+    width: 40%;
+    overflow-x: hidden;
+  }
+
+  .program-img img {
+    width: 80%;
   }
 }
 

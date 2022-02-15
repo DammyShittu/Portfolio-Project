@@ -138,7 +138,6 @@ footer a:hover {
   transform: scale(0.97);
 }
 
-
 .hamburger:hover {
   transform: rotate(360deg);
   transition: transform 800ms ease-in-out;
@@ -146,6 +145,11 @@ footer a:hover {
 
 #page_logo {
   width: 25%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
 }
 
 #page_logo a img {
@@ -159,9 +163,10 @@ footer a:hover {
 
 .container1 {
   height: 100vh;
-  background-image: linear-gradient(
-    rgba(46, 43, 43, 0.7),
-    rgba(28, 27, 27, 0.5)
+  background-image:
+    linear-gradient(
+      rgba(46, 43, 43, 0.7),
+      rgba(28, 27, 27, 0.5)
     ),
     url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-position: center;
@@ -226,7 +231,6 @@ h1 {
 
 #portfolio-intro h2 {
   font-size: 22px;
-  font-style: normal;
   font-weight: 500;
   line-height: 30px;
   text-align: center;
@@ -329,8 +333,9 @@ h1 {
   border-radius: 10px;
   gap: 25px;
   list-style: none;
-  box-shadow: rgba(14, 30, 37, 0.12) 0 10px 4px 0,
-              rgba(14, 30, 37, 0.32) 0 10px 16px 0;
+  box-shadow:
+    rgba(14, 30, 37, 0.12) 0 10px 4px 0,
+    rgba(14, 30, 37, 0.32) 0 10px 16px 0;
 }
 
 .card {
@@ -343,11 +348,6 @@ h1 {
   border: none;
 }
 
-.card img {
-  width: 100%;
-  height: 100%;
-}
-
 .work-card aside {
   width: 100%;
 }
@@ -356,18 +356,18 @@ h1 {
   justify-content: flex-end;
 }
 
-.contact-head p,
-.work-card aside p,
-.stack-used ul li,
-textarea {
-  font-family: Inter, sans-serif;
-}
-
 .contact-head p {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+}
+
+.contact-head p,
+.work-card aside p,
+.stack-used ul li,
+textarea {
+  font-family: Inter, sans-serif;
 }
 
 .work-card aside p {
@@ -594,14 +594,14 @@ footer {
     border-bottom: 1px solid #959597;
   }
 
-  #page-nav ul li a img {
-    position: relative;
-    top: 2px;
-  }
-
   #page_logo a img {
     width: 30%;
     height: 30%;
+  }
+
+  #page-nav ul li a img {
+    position: relative;
+    top: 2px;
   }
 
   .container1 {
@@ -762,7 +762,7 @@ footer {
 }
 
 @keyframes bounce {
-  0% {top: 0;}
-  50% {top: -10px}
-  100% {top: 0;}
+  0% { top: 0; }
+  50% { top: -10px; }
+  100% { top: 0; }
 }

@@ -10,19 +10,9 @@ This project contains my portfolio, coded according to requirements provided by 
 Click [here](https://dammy-portfolio.netlify.app/) to view the website online.
 # Screenshot
 
-## Desktop View 
-
-Width - 1440px
+## Desktop View
 
 ![Image of the desktop view](./img/desktop-view.png)
-
-## Mobile View
-
-Width - 375px
-
-![Image of the mobile view](./img/mobile-view.png)
-
-
 # This project was built with:
 
 HTML5
